@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Socket.IO chat</title>
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="sidebar__user">
+                <i class="fas fa-user"></i>
+            </div>
+
+            <div class="sidebar__buttons">
+                <div class="sidebar__buttons__button">
+                    <i class="fas fa-home"></i>
+                </div>
+                <div class="sidebar__buttons__button sidebar__buttons__button--active">
+                    <i class="fas fa-paper-plane"></i>
+                </div>
+                <div class="sidebar__buttons__button">
+                    <i class="fas fa-users"></i>
+                </div>
+
+                <div class="sidebar__buttons__button sidebar__buttons__button--bottom">
+                    <i class="fas fa-cog"></i>
+                </div>
+               
+            </div>
+        </nav>
+        <div class="content">
+            <section class="messages"></section>
+            <section class="message_viewer"></section>
+        </div>
+    </div>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    var socket = io();
+</script>
+
+</html>
